@@ -81,7 +81,7 @@ input:focus{
     align-items: flex-start;
     padding: 5px;
     overflow: hidden;
-    background-image: url('../bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png');
+    background-image: url('../bg-chat.png');
 }
 .bubble{
     padding: 6px 9px 8px 9px;
