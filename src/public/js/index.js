@@ -19,7 +19,9 @@ chatBox.addEventListener('keyup', event =>{
     if(event.key === 'Enter'){
         if(chatBox.value.trim().length > 0){
             socket.emit('message', {
-                user, message: chatBox.value
+                user,
+                message: chatBox.value,
+                date: `${new Date().getHours()}:${new Date().getMinutes()}`
             })
 
             chatBox.value = '';
@@ -34,7 +36,7 @@ socket.on('logs', data => {
     let messages = ''
 
     data.reverse().forEach(message => {
-        messages += `<p><i>${message.user}</i>: ${message.message}</p>`
+        messages += `<div class='bubble'><i class='bubble-user'>${message.user}</i><p class='bubble-message'>${message.message}<span class='hour'>${message.date}</span></p></div>`
     });
 
     divLog.innerHTML = messages
