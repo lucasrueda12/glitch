@@ -81,7 +81,7 @@ input:focus{
     align-items: flex-start;
     padding: 5px;
     overflow: hidden;
-    background-image: url('../bg-chat.png');
+    background-image: url('../img/bg-chat.png');
 }
 .bubble{
     padding: 6px 9px 8px 9px;
