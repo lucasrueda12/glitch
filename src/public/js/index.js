@@ -5,7 +5,7 @@ let chatBox = document.getElementById('chatbox');
 Swal.fire({
     title: 'Authentication',
     input: 'text',
-    text: 'Set username for the Bianca\'s chat',
+    text: 'Set username for the kratos chat',
     inputValidator: value => {
         return !value.trim() && 'Please. Write a username!'
     },
